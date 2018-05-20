@@ -1,0 +1,26 @@
+{
+  "name": "@resource-sentry/reader-json",
+  "version": "1.0.0",
+  "description": "Resource Sentry JSON Reader.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resource-sentry/reader-json.git"
+  },
+  "keywords": [
+    "json",
+    "tree",
+    "static",
+    "resource",
+    "resource-sentry"
+  ],
+  "author": "Nicolas Siver",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resource-sentry/reader-json/issues"
+  },
+  "homepage": "https://github.com/resource-sentry/reader-json#readme"
+}
