@@ -1,0 +1,14 @@
+{
+  "start": {
+    "deeper": {
+      "very-deep": 8
+    }
+  },
+  "one": 1,
+  "two": {
+    "holder": [
+      2,
+      69
+    ]
+  }
+}
