@@ -2,7 +2,7 @@ const Categories = require('@resource-sentry/utils/lib/categories');
 
 const Reader = require('../src/index');
 
-describe('Reader', () => {
+describe('Order', () => {
 
     let categories;
 
