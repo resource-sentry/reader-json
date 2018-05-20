@@ -3,8 +3,10 @@
 Combines all properties from a single or directory of JSON files.
 The reader can walk through deeply nested objects with some conventional limitations.
 
-- Visit only first element of Array
-- Add parent property to the qualifying name
+- Visits only first element of Array
+- Adds parent property to the qualifying name
+- Converts `Boolean` to a `Number` (Example: 0 or 1)
+- Converts `null` to a `NULL <String>`
 
 ![Version](https://img.shields.io/npm/v/@resource-sentry/reader-json.svg)
 ![Dependencies](https://david-dm.org/resource-sentry/reader-json.svg)
