@@ -21,13 +21,23 @@ class JsonReader extends BaseReader {
         return this.config[ConfigParameters.ENTRY];
     }
 
+    getMaxNestedLevel() {
+        let level = this.config[ConfigParameters.DEEP];
+
+        if (level === undefined) {
+            level = Constants.WALK_LIMIT;
+        }
+
+        return level;
+    }
+
     scan() {
         return Promise
             .resolve()
             .then(() => this.fileService.getFiles(path.resolve(process.cwd(), this.getEntry())))
             .then(files => {
                 let category;
-                let objectWalker = new ObjectWalker(Constants.WALK_LIMIT);
+                let objectWalker = new ObjectWalker(this.getMaxNestedLevel());
                 let values = [];
 
                 this.logger.verbose(`Analyzing ${files.length} file(s)`);
