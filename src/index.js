@@ -66,9 +66,8 @@ class JsonReader extends BaseReader {
                     category = isNaN(value) === true ? Categories.TEXT : Categories.VALUE;
                     this.addValue(category, key, value);
                 });
-
-                this.dispatch(Constants.DATA_DID_CHANGE);
-            });
+            })
+            .then(() => this.dispatch(Constants.DATA_DID_CHANGE));
     }
 }
 

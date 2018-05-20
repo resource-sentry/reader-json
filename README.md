@@ -18,8 +18,8 @@ The reader can walk through deeply nested objects with some conventional limitat
 
 ## Configuration
 
-- `entry`, path to a single of a directory of JSON files
-- `deep`, limit for nesting. Where `0` disables walk through nested objects.
+- `entry`, path to a single _or_ a directory of JSON files
+- `deep`, limit for nesting. Where `0` disables walk through nested objects. By default there is no limitation if this _optional_ parameter is not provided.
 
 ## Example
 
