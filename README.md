@@ -7,6 +7,7 @@ The reader can walk through deeply nested objects with some conventional limitat
 - Adds parent property to the qualifying name
 - Converts `Boolean` to a `Number` (Example: 0 or 1)
 - Converts `null` to a `NULL <String>`
+- Converts empty `Array` to a `NULL <String>`
 
 ![Version](https://img.shields.io/npm/v/@resource-sentry/reader-json.svg)
 ![Dependencies](https://david-dm.org/resource-sentry/reader-json.svg)
